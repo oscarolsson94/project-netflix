@@ -3,7 +3,7 @@ import "./Nav.css";
 
 const Nav = () => {
     return (
-        <div className="nav">
+        <div className="nav nav__black">
             <div className="nav__contents">
                 <img
                     className="nav__logo"

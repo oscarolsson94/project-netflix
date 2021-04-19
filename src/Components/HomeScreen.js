@@ -4,7 +4,11 @@ import "./HomeScreen.css";
 const HomeScreen = () => {
     return (
         <div className="homeScreen">
-            
+            {/* Nav */}
+
+            {/* Banner */}
+
+            {/* Rows */}
         </div>
     );
 }

@@ -1,10 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Row.css';
 
-const Row = () => {
+const Row = ({ title, fetchUrl, isLargeRow = false }) => {
+    
+    const [movies, setMovies] = useState([]);
+
+    
+
     return (
-        <div>
-            
+        <div className="row">
+            <h2>{title}</h2>
         </div>
     )
 }

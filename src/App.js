@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import HomeScreen from './Components/HomeScreen';
+import HomeScreen from './screens/HomeScreen';
 import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
 
 function App() {
@@ -8,7 +8,7 @@ function App() {
     <div className="app">
         <Router>
             <Switch>
-                <Route path="/">
+                <Route exact path="/">
                     <HomeScreen />
                 </Route>
             </Switch>

@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from 'react';
+import { useHistory } from 'react-router';
 import "./Nav.css";
 
 const Nav = () => {
 
     const [show, setShow] = useState(false);
+    const history = useHistory();
 
     const transitionNavBar = () => {
         if (window.scrollY > 100) {
@@ -31,6 +33,7 @@ const Nav = () => {
                 />
 
                 <img
+                    onClick={() => history.push("/profile")}
                     className="nav__avatar"
                     src="https://occ-0-285-41.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABbme8JMz4rEKFJhtzpOKWFJ_6qX-0y5wwWyYvBhWS0VKFLa289dZ5zvRBggmFVWVPL2AAYE8xevD4jjLZjWumNo.png?r=a41"
                     alt="netflix avatar"
